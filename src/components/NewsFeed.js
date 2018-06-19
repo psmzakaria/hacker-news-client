@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { articles } from "../seedData.js";
-
+import UpvoteButton from "./UpvoteButton"
 class NewsFeed extends Component {
   constructor() {
     super();
@@ -37,7 +37,7 @@ class NewsFeed extends Component {
           <h2> {article.author}</h2>
           <p> {article.description}</p>
           <a href> {article.url}</a>
-          {/* <li> <UpvoteButton/>{article.votes}</li> */}
+          <li> <UpvoteButton/>{article.votes}</li>
 
         </div>
       );

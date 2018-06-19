@@ -1,16 +1,14 @@
-// import React from 'react';
-// const upvoteButton () ={
+import React from "react";
 
-// <button onClick={() => this.addVote()}>+</button>
-// }
-// //  addVote = () =>{
+const UpvoteButton = props => {
+  return (
+    <div className="votes">
+      <p>
+        <div className="voteUp" onClick={props.voteUp} />
+      </p>
+      <p className="voteIncrease">Votes: {props.voteIncrease}</p>
+    </div>
+  );
+};
 
-// const newInput =Number( this.state.article.vote)
-// return (const newValue = newInput + 1)
-//  }
- 
-//  this.setState({
-//     : [
-     
-//     ]
-//   });
+export default UpvoteButton;
